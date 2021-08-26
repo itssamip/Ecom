@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Ecom.DataAccess.Migrations
 {
-    public partial class AddDefaultIdentityMigration : Migration
+    public partial class Initilation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
