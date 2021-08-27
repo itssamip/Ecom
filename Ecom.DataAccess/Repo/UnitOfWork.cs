@@ -15,7 +15,10 @@ namespace Ecom.DataAccess.Repo
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
+            Category = new CategoryRepo(_db);
         }
+
+        public ICategoryRepo Category { get; private set; }
         public void Dispose()
         {
             _db.Dispose();

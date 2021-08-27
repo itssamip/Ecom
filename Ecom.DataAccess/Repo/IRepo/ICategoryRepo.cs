@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ecom.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Ecom.DataAccess.Repo.IRepo
 {
-    public interface IUnitOfWork : IDisposable
+    public interface ICategoryRepo : IRepo<Category>
     {
-        ICategoryRepo Category { get; }
-        void Save();
+        void Update(Category category);
     }
 }
