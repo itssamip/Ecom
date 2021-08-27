@@ -9,6 +9,9 @@ namespace Ecom.DataAccess.Repo.IRepo
     public interface IUnitOfWork : IDisposable
     {
         ICategoryRepo Category { get; }
+
+        ISubCategoryRepo SubCategory { get; }
+
         void Save();
     }
 }

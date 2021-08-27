@@ -16,9 +16,11 @@ namespace Ecom.DataAccess.Repo
         {
             _db = db;
             Category = new CategoryRepo(_db);
+            SubCategory = new SubCategoryRepo(_db);
         }
 
         public ICategoryRepo Category { get; private set; }
+        public ISubCategoryRepo SubCategory { get; private set; }
         public void Dispose()
         {
             _db.Dispose();
